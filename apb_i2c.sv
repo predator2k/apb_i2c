@@ -1,3 +1,6 @@
+`resetall
+`timescale 1ns / 1ps
+
 `include "i2c_master_defines.sv"
 
 `define REG_CLK_PRESCALER 3'b000 //BASEADDR+0x00
@@ -205,3 +208,5 @@ module apb_i2c
     assign PSLVERR = 1'b0;
 
 endmodule
+
+`resetall

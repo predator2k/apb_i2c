@@ -133,6 +133,8 @@
 // Tsu:sto     4.0us            0.6us   setup time for a stop conditon
 // Tbuf        4.7us            1.3us   Bus free time between a stop and start condition
 //
+`resetall
+`timescale 1ns / 1ps
 
 `include "i2c_master_defines.sv"
 
@@ -542,3 +544,5 @@ module i2c_master_bit_ctrl
     assign sda_o = 1'b0;
 
 endmodule
+
+`resetall

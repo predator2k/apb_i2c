@@ -65,6 +65,8 @@
 //               Fixed bug in the byte_controller statemachine.
 //               Added headers.
 //
+`resetall
+`timescale 1ns / 1ps
 
 `include "i2c_master_defines.sv"
 
@@ -332,3 +334,5 @@ module i2c_master_byte_ctrl (
 	      endcase
 	  end
 endmodule
+
+`resetall
